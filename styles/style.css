@@ -2,6 +2,60 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+font-family:'IBM Plex Mono', sans-serif;
 }
 
-/* Проверка правильности настройки репозитория */
+.header {
+  display: grid;
+  grid-template-columns: minmaх(375px, 768px);
+  /* grid-template-rows: 5; */
+  background-image: url("../images/cover-image-dark.png");
+}
+
+.header__theme-menu {
+  justify-items: end;
+}
+
+.header__theme-menu-list {
+  list-style: none;
+}
+
+.header__theme-menu-item {
+  font-family:'IBM Plex Mono', sans-serif;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  color: #FF0070;
+}
+
+.header__theme-menu-button_active {
+
+}
+
+.header__theme-menu-button_type_auto {
+
+}
+
+.header__theme-menu-button_type_dark {
+
+}
+
+.heading {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 95.7px;
+  font-weight: 700;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0px #FF0070;
+  text-transform: lowercase;
+
+}
+
+.header__description {
+  font-family:'IBM Plex Mono', sans-serif;
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  color: #000028;
+  background-color: #FF0070;
+}
