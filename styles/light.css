@@ -1,16 +1,64 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+/* Специально для светлой темы при наличии класса. Здесь окажутся стили, 
+которые нужно переопределить принудительно, переключая тему
+Сохраните селектор :root.theme-light в приведённом виде. Так стили, написанные
+ниже будут иметь больший вес, чем стили в медиазапросе предпочтений пользователя */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+--accent-color: #FF8DCB;
+--bgimg-path: url("../images/cover-image-light.png");
+--block-padding: 10px;
+--font: 'IBM Plex Mono', sans-serif;
+--font-size: 18px;
+--font-weight: 400;
+--line-height: 25px;
+--indentation-of-the-decorative-corner: 10px;
+--decorative-corner-color: #353430;
+--nav-text-color: #353430;
+--nav-hover-color: #32312D66;
+--header-h1-color: #FFC2E6;
+--section-header-color: #353430;
+--header-text-color: #353430;
+--text-color: #353430;
+--block-margin-top: 40px;
+--block-margin-left: 10px;
+--block-margin-right: 10px;
+--block-margin-bottom: 10px;
+--gallery-gap: 10px;
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+}
+
+.theme-light .header__the-inscription-in-the-right-corner {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #FF8DCB;
+    --bgimg-path: url("../images/cover-image-light.png");
+    --block-padding: 10px;
+    --font: 'IBM Plex Mono', sans-serif;
+    --font-size: 18px;
+    --font-weight: 400;
+    --line-height: 25px;
+    --indentation-of-the-decorative-corner: 10px;
+    --decorative-corner-color: #353430;
+    --nav-text-color: #353430;
+    --nav-hover-color: #32312D66;
+    --header-h1-color: #FFC2E6;
+    --section-header-color: #353430;
+    --header-text-color: #353430;
+    --text-color: #353430;
+    --block-margin-top: 40px;
+    --block-margin-left: 10px;
+    --block-margin-right: 10px;
+    --block-margin-bottom: 10px;
+    --gallery-gap: 10px;  
+  }
+
+  .theme-auto .header__the-inscription-in-the-right-corner {
+    display: none;
+  }
 }
