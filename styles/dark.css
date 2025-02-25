@@ -6,7 +6,7 @@
 
 :root.theme-dark {
   --accent-color: #FF0070;
-  --bgimg-path: url("../images/cover-image-dark.png");
+  --bg-img-path: url("../images/cover-image-dark.png");
   --block-padding: 10px;
   --font: 'IBM Plex Mono', sans-serif;
   --font-size: 18px;
@@ -15,7 +15,7 @@
   --indentation-of-the-decorative-corner: 10px;
   --decorative-corner-color: #FF0070;
   --nav-text-color: #FF0070;
-  --header-h1-color: #DB00FF;
+  --main-header-color: #DB00FF;
   --section-header-color: #FF0070; 
   --header-text-color: #000028;
   --text-color: #F1B2CE;
@@ -24,8 +24,4 @@
   --block-margin-right: 10px;
   --block-margin-bottom: 10px;
   --gallery-gap: 10px;
-}
-
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
 }

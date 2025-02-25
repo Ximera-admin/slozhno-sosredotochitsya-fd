@@ -5,7 +5,7 @@
 .page { 
   position: relative;
   font-family: var(--font);
-  background-image: var(--bgimg-path);
+  background-image: var(--bg-img-path);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -114,23 +114,11 @@
   
 }
 
-.header__theme-menu-button_type_auto {
-
-}
-
-.header__theme-menu-button_type_dark {
- 
-}
-
-.header__theme-menu-button_type_light {
-
-}
-
-.header__heading {
+.main__heading {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: calc(var(--line-height) + 70.7px);
   font-weight: calc(var(--font-weight) + 300);
-  color: var(--header-h1-color);
+  color: var(--main-header-color);
   text-transform: lowercase;
 }
 
@@ -223,7 +211,6 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: auto-fill;
   gap: var(--gallery-gap);
 }
 
@@ -280,11 +267,13 @@
   }
 
   .main__paragraph-header .title-decor {
-    grid-column-start: 2 / span 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   .main__paragraph-text {
-    grid-column-start: 2 / span 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   .main__three-columns {
@@ -389,11 +378,13 @@
   }
 
   .main__paragraph-header .title-decor {
-    grid-column-start: 1 / span 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .main__paragraph-text {
-    grid-column-start: 2 / span 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   .main__three-columns {

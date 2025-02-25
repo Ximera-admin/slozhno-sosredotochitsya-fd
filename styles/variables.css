@@ -2,7 +2,7 @@
 
 :root {
 --accent-color: #FF0070;
---bgimg-path: url("../images/cover-image-dark.png");
+--bg-img-path: url("../images/cover-image-dark.png");
 --block-padding: 10px;
 --font: 'IBM Plex Mono', sans-serif;
 --font-size: 18px;
@@ -12,7 +12,7 @@
 --decorative-corner-color: #FF0070;
 --nav-text-color: #FF0070;
 --nav-hover-color: #FF007066;
---header-h1-color: #DB00FF;
+--main-header-color: #DB00FF;
 --section-header-color: #FF0070; 
 --header-text-color: #000028;
 --text-color: #F1B2CE;
