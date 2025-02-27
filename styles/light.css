@@ -4,24 +4,16 @@
 ниже будут иметь больший вес, чем стили в медиазапросе предпочтений пользователя */
 
 :root.theme-light {
---accent-color: #FF8DCB;
---bg-img-path: url("../images/cover-image-light.png");
---block-padding: 10px;
---font: 'IBM Plex Mono', sans-serif;
---font-size: 18px;
---font-weight: 400;
---line-height: 25px;
---indentation-of-the-decorative-corner: 10px;
---decorative-corner-color: #353430;
---nav-text-color: #353430;
---nav-hover-color: #32312D66;
---main-header-color: #FFC2E6;
---section-header-color: #353430;
---header-text-color: #353430;
---text-color: #353430;
---main-block-margin: 30px 0;
---main-block-padding: 10px;
---main-block-gap: 50px;
+  --bg-img-path: url("../images/cover-image-light.png");
+  --accent-color: #FF8DCB;
+  --accent-shadow-color: #FF0070;
+  --decorative-corner-color: #353430;
+  --nav-text-color: #353430;
+  --nav-hover-color: #32312D66;
+  --main-header-color: #FFC2E6;
+  --section-header-color: #353430;
+  --header-text-color: #353430;
+  --text-color: #353430;
 }
 
 .theme-light .header__the-inscription-in-the-right-corner {
@@ -30,23 +22,19 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --bg-img-path: url("../images/cover-image-light.png");
     --accent-color: #FF8DCB;
-    --bgimg-path: url("../images/cover-image-light.png");
-    --block-padding: 10px;
-    --font: 'IBM Plex Mono', sans-serif;
-    --font-size: 18px;
-    --font-weight: 400;
-    --line-height: 25px;
-    --indentation-of-the-decorative-corner: 10px;
+    --accent-shadow-color: #FF0070;
     --decorative-corner-color: #353430;
     --nav-text-color: #353430;
     --nav-hover-color: #32312D66;
-    --header-h1-color: #FFC2E6;
+    --main-header-color: #FFC2E6;
     --section-header-color: #353430;
     --header-text-color: #353430;
     --text-color: #353430;
-    --main-block-margin: 30px 0;
-    --main-block-padding: 10px;
-    --main-block-gap: 50px;
+  }
+
+  .theme-auto .header__the-inscription-in-the-right-corner {
+    display: none;
   }
 }
