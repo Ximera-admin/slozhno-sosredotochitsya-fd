@@ -6,15 +6,15 @@
 
 :root.theme-dark {
   --bg-img-path: url("../images/cover-image-dark.png");
-  --accent-color: #FF0070;
-  --accent-shadow-color: #FF0070;
-  --decorative-corner-color: #FF0070;
-  --nav-text-color: #FF0070;
-  --nav-hover-color: #FF007066;
-  --main-header-color: #DB00FF;
-  --section-header-color: #FF0070; 
+  --accent-color: #ff0070;
+  --accent-shadow-color: #ff0070;
+  --decorative-corner-color: #ff0070;
+  --nav-text-color: #ff0070;
+  --nav-hover-color: #ff007066;
+  --main-header-color: #db00ff;
+  --section-header-color: #ff0070;
   --header-text-color: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
 }
 
 .theme-dark .header__the-inscription-in-the-right-corner {

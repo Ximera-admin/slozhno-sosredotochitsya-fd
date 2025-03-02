@@ -2,7 +2,7 @@
 Сохраните в разметке и стилях класс page у тега body. 
 Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
-.page { 
+.page {
   position: relative;
   font-family: var(--font);
   font-size: var(--font-size);
@@ -18,7 +18,7 @@
   position: relative;
   padding: var(--block-padding);
   grid-template-rows: 1fr min-content 1fr;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .decorated-zone::before {
@@ -225,7 +225,6 @@
 }
 
 @media (width >= 768px) {
-
   .header > .main__heading {
     margin-left: -20px;
   }
@@ -245,17 +244,17 @@
   .header__description {
     inline-size: 50%;
   }
-  
+
   .decorated-zone::before {
     bottom: calc(var(--indentation-of-the-decorative-corner) + 10px);
     left: calc(var(--indentation-of-the-decorative-corner) + 10px);
   }
-  
+
   .decorated-zone::after {
     top: calc(var(--indentation-of-the-decorative-corner) + 10px);
     right: calc(var(--indentation-of-the-decorative-corner) + 10px);
   }
-  
+
   .header__the-inscription-in-the-right-corner {
     right: calc(var(--indentation-of-the-decorative-corner) + 40px);
     top: calc(var(--indentation-of-the-decorative-corner) + 10px);
@@ -303,7 +302,6 @@
 }
 
 @media (width >= 1024px) {
-
   .header__theme-menu {
     align-self: start;
     justify-self: center;
