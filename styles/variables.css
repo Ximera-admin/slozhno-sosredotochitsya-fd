@@ -21,3 +21,11 @@
 --main-block-gap: 50px;
 --indentation-of-the-decorative-corner: 10px;
 }
+
+@media (width >= 768px) {
+  :root {
+    --main-block-margin: 40px 0;
+    --main-block-padding: 20px;
+    --main-block-gap: 80px;
+  }
+}

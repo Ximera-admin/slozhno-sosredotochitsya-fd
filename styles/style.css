@@ -5,12 +5,12 @@
 .page { 
   position: relative;
   font-family: var(--font);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
   background-image: var(--bg-img-path);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  line-height: var(--line-height);
-  font-size: var(--font-size);
 }
 
 .header {
@@ -136,7 +136,7 @@
   background-color: var(--accent-color);
 }
 
-.grid-and-margins {
+.main {
   display: grid;
   margin: var(--main-block-margin);
   padding: var(--main-block-padding);
@@ -259,12 +259,6 @@
   .header__the-inscription-in-the-right-corner {
     right: calc(var(--indentation-of-the-decorative-corner) + 40px);
     top: calc(var(--indentation-of-the-decorative-corner) + 10px);
-  }
-
-  .grid-and-margins {
-    --main-block-margin: 40px 0;
-    --main-block-padding: 20px;
-    --main-block-gap: 80px;
   }
 
   .section {
