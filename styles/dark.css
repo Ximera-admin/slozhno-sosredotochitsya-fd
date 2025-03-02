@@ -6,6 +6,7 @@
 
 :root.theme-dark {
   --bg-img-path: url("../images/cover-image-dark.png");
+  --bg-color: #000028;
   --accent-color: #ff0070;
   --accent-shadow-color: #ff0070;
   --decorative-corner-color: #ff0070;

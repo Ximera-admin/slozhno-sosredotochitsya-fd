@@ -5,6 +5,7 @@
 
 :root.theme-light {
   --bg-img-path: url("../images/cover-image-light.png");
+  --bg-color: #fff1f7;
   --accent-color: #FF8DCB;
   --accent-shadow-color: #FF0070;
   --decorative-corner-color: #353430;
@@ -23,6 +24,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-img-path: url("../images/cover-image-light.png");
+    --bg-color: #fff1f7;
     --accent-color: #FF8DCB;
     --accent-shadow-color: #FF0070;
     --decorative-corner-color: #353430;

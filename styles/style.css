@@ -7,6 +7,7 @@
   font-family: var(--font);
   font-size: var(--font-size);
   line-height: var(--line-height);
+  background-color: var(--bg-color);
   background-image: var(--bg-img-path);
   background-size: cover;
   background-position: center;
@@ -18,6 +19,7 @@
   position: relative;
   padding: var(--block-padding);
   grid-template-rows: 1fr min-content 1fr;
+  min-height: 668px;
   height: 100vh;
 }
 
@@ -190,13 +192,11 @@
   color: var(--text-color);
 }
 
-.article-margin > .main__paragraph-header {
+.header-margin {
   margin-block-end: 20px;
 }
 
 .gallery .list {
-  display: flex;
-  flex-direction: column;
   gap: 10px;
 }
 
@@ -217,6 +217,7 @@
   position: relative;
   justify-items: center;
   align-content: center;
+  min-height: 668px;
   height: 100vh;
 }
 
