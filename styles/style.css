@@ -9,6 +9,8 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  line-height: var(--line-height);
+  font-size: var(--font-size);
 }
 
 .header {
@@ -45,9 +47,7 @@
   position: absolute;
   right: calc(var(--indentation-of-the-decorative-corner) + 30px);
   top: calc(var(--indentation-of-the-decorative-corner) + 0px);
-  font-size: var(--font-size);
   font-weight: var(--font-weight);
-  line-height: var(--line-height);
   color: var(--accent-color);
 }
 
@@ -82,11 +82,9 @@
 .header__theme-menu-button {
   background-color: transparent;
   min-width: 70px;
-  font-size: var(--font-size);
-  line-height: calc(var(--line-height) - 3px);
-   color: var(--nav-text-color);
-   text-transform: lowercase;
-   border: none;
+  color: var(--nav-text-color);
+  text-transform: lowercase;
+  border: none;
   cursor: pointer;
 }
 
@@ -130,8 +128,6 @@
   justify-self: end;
   align-self: center;
   max-width: 375px;
-  font-size: var(--font-size);
-  line-height: calc(var(--line-height) - 1.6px);
   font-weight: calc(var(--font-weight) + 300);
   color: var(--header-text-color);
 }
@@ -165,7 +161,7 @@
 }
 
 .main__section-header {
-  font-size: var(--font-size);
+  font-size: inherit;
   font-weight: calc(var(--font-weight) + 300);
   color: var(--section-header-color);
   margin-block-end: 20px;
@@ -179,7 +175,7 @@
 
 .main__paragraph-header {
   width: 100%;
-  font-size: var(--font-size);
+  font-size: inherit;
   font-weight: calc(var(--font-weight) + 300);
   color: var(--header-text-color);
   margin-block-end: 10px;
@@ -190,18 +186,12 @@
 }
 
 .main__paragraph-text {
-  font-size: var(--font-size);
-  line-height: calc(var(--line-height) - 1.6px);
   font-weight: var(--font-weight);
   color: var(--text-color);
 }
 
 .article-margin > .main__paragraph-header {
   margin-block-end: 20px;
-}
-
-.article-margin {
-  margin-block-end: 50px;
 }
 
 .gallery .list {
@@ -211,13 +201,15 @@
 }
 
 .gallery .main__paragraph-header {
-  margin-block-end: 13px;
+  margin-block-end: 10px;
 }
 
 .pic-size-and-positioning {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .footer {
@@ -225,15 +217,11 @@
   position: relative;
   justify-items: center;
   align-content: center;
-  min-height: 667px;
+  height: 100vh;
 }
 
 .footer__shadow {
   text-shadow: 2px 2px 0 var(--accent-shadow-color);
-}
-
-.resetting-margins {
-  margin-top: -50px;
 }
 
 @media (width >= 768px) {
