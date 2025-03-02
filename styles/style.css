@@ -129,7 +129,6 @@
   display: grid;
   justify-self: end;
   align-self: center;
-  max-width: 375px;
   font-weight: calc(var(--font-weight) + 300);
   color: var(--header-text-color);
 }
@@ -311,10 +310,6 @@
   .header__theme-menu-list {
     flex-direction: row;
     align-items: start;
-  }
-
-  .header__description {
-    max-width: 491px;
   }
 
   .section {

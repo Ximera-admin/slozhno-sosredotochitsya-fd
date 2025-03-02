@@ -36,7 +36,7 @@
     --text-color: #353430;
   }
 
-  .theme-auto .header__the-inscription-in-the-right-corner {
+  .header__the-inscription-in-the-right-corner {
     display: none;
   }
 }
