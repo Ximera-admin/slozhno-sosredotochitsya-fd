@@ -328,7 +328,6 @@
   }
 
   .header__theme-menu-list {
-    display: flex;
     flex-direction: row;
     align-items: start;
   }
